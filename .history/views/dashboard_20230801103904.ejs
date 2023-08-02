@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+</head>
+<body>
+  <h1>Welcome, <%= user.username %>!</h1>
+  <p>User Images:</p>
+  <ul>
+    <% images.forEach(image => { %>
+      <li>
+        <img style="width: 200px;" src="/images/<%= image %>" alt="<%= image %>">
+      </li>
+    <% }) %>
+  </ul>
+  <p>User Videos:</p>
+  <ul>
+    <% videos.forEach(video => { %>
+      <li><%= video %></li>
+    <% }) %>
+  </ul>
+  <a href="/logout">Logout</a>
+</body>
+</html>
+

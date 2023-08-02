@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-image: url('./images/drop-3698073.jpg');
+  }
+  
+  h1 {
+    color: #333;
+    margin-left: 45%;
+   
+  }
+  
+  form {
+    margin-top: 10%;
+    margin-left: 35%;
+    padding: 20px;
+    width: 31.2%;
+    background-color: #fff;
+    border-radius: 5px;
+    
+    
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #7ea6d1;
+    color: #fff;
+    border: none;
+    width: 10%;
+    height: 5%;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 45%;
+  }
+  
+  p {
+    color: red;
+  }
+  

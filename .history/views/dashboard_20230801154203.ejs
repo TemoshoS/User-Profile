@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet"  href="style.css">
+</head>
+<body>
+  
+  <h1>Welcome, <%= user.username %>!</h1>
+  <p>User Images:</p>
+  <ul>
+    <% images.forEach(image => { %>
+     
+        <img style="width: 200px;height: 200px;" src="/images/<%= image %>" alt="<%= image %>">
+      
+    <% }) %>
+  </ul>
+  <p>User Videos:</p>
+  <ul>
+    <% videos.forEach(video => { %>
+        
+          <video width="320" height="240" controls>
+            <source src="/videos/<%= video %>" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        
+      <% }) %>
+  </ul>
+  <a href="/logout">Logout</a>
+</body>
+</html>
+
